@@ -1,9 +1,8 @@
 "use client";
 
 import { useState, useEffect } from 'react';
-import { Timer } from 'lucide-react';
 
-const COUNTDOWN_FROM = 3 * 60 * 60 + 21 * 60 + 58; // 3h 21m 58s
+const COUNTDOWN_FROM = 3 * 60 * 60 + 21 * 58; // 3h 21m 58s
 
 export function PromoHeader() {
   const [timeLeft, setTimeLeft] = useState(COUNTDOWN_FROM);
@@ -38,7 +37,7 @@ export function PromoHeader() {
   );
 
   return (
-    <div className="bg-primary text-primary-foreground py-2 px-4 w-full flex items-center justify-center text-sm md:text-base font-medium text-center sticky top-0 z-50">
+    <div className="bg-promo-header text-primary-foreground py-2 px-4 w-full flex items-center justify-center text-sm md:text-base font-medium text-center sticky top-0 z-50">
       <span className="mr-2">Mega Promoção de R$197 por apenas R$19,90 termina em:</span>
       {isClient ? (
         <div className="flex items-center gap-1 font-mono" aria-live="polite">
