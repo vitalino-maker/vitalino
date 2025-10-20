@@ -21,7 +21,7 @@ export function HeroSection() {
         
         <div className="w-full max-w-xs sm:max-w-xs md:max-w-xs mx-auto">
           <div className="relative w-full rounded-2xl bg-muted shadow-2xl overflow-hidden border-4 border-secondary ring-4 ring-secondary/50 mb-8 aspect-[9/16]">
-              <div className="wistia_embed wistia_async_e1ud5o43od videoFoam=true" style={{height: '100%', position:'relative', width:'100%'}}>&nbsp;</div>
+              <div className="wistia_embed wistia_async_zdsjemwzoi videoFoam=true" style={{height: '100%', position:'relative', width:'100%'}}>&nbsp;</div>
           </div>
         </div>
 
