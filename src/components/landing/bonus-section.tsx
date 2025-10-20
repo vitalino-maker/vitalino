@@ -19,7 +19,7 @@ const bonuses = [
   },
   {
     id: "bonus-checklist",
-    title: "Checklist da introdução alimentar",
+    title: "Dicas de armazenamento dos alimentos do Bebê",
     price: "R$19,90"
   },
   {

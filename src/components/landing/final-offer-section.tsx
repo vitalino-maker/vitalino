@@ -15,7 +15,7 @@ const bonuses = [
     title: "Plano alimentar semanal",
   },
   {
-    title: "Checklist da introdução alimentar",
+    title: "Dicas de armazenamento dos alimentos do Bebê",
   },
   {
     title: "Lista de substituições saudáveis",
