@@ -15,31 +15,31 @@ const previewImages = [
   {
     id: "preview-1",
     description: "Preview do ebook",
-    imageUrl: "https://i.imgur.com/u1JWoJ5.png",
+    imageUrl: "https://i.imgur.com/eRymfaS.png",
     imageHint: "ebook page"
   },
   {
     id: "preview-2",
     description: "Preview do ebook",
-    imageUrl: "https://i.imgur.com/UZ5FSQr.png",
+    imageUrl: "https://i.imgur.com/SSLTreG.png",
     imageHint: "ebook page"
   },
   {
     id: "preview-3",
     description: "Preview do ebook",
-    imageUrl: "https://i.imgur.com/yIypWTX.png",
+    imageUrl: "https://i.imgur.com/gaM2cuN.png",
     imageHint: "ebook page"
   },
   {
     id: "preview-4",
     description: "Preview do ebook",
-    imageUrl: "https://i.imgur.com/ybLseh0.png",
+    imageUrl: "https://i.imgur.com/1VOQk5W.png",
     imageHint: "ebook page"
   },
   {
     id: "preview-5",
     description: "Preview do ebook",
-    imageUrl: "https://i.imgur.com/DUlLsHk.png",
+    imageUrl: "https://i.imgur.com/fPcKXrN.png",
     imageHint: "ebook page"
   },
 ];
