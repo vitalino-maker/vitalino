@@ -27,8 +27,8 @@ export function HeroSection() {
             className="relative w-full rounded-2xl bg-muted shadow-2xl overflow-hidden border-4 border-secondary ring-4 ring-secondary/50 mb-8"
           >
             {/* Wistia Player Embed - Optimized */}
-            <Script src="https://fast.wistia.com/player.js" strategy="afterInteractive" />
-            <Script src="https://fast.wistia.com/embed/zdsjemwzoi.js" strategy="afterInteractive" type="module" />
+            <Script src="https://fast.wistia.com/player.js" strategy="lazyOnload" />
+            <Script src="https://fast.wistia.com/embed/zdsjemwzoi.js" strategy="lazyOnload" type="module" />
             <style>{`
               wistia-player[media-id='zdsjemwzoi']:not(:defined) { 
                 background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/zdsjemwzoi/swatch'); 
