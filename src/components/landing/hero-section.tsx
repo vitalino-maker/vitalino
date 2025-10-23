@@ -15,7 +15,7 @@ export function HeroSection() {
     <section className="relative w-full flex items-center justify-center text-center bg-background text-foreground overflow-hidden pt-12 pb-16 md:py-32">
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
         <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold font-headline !leading-tight max-w-4xl mb-4">
-          Transforme a Alimentação do Seu Bebê em Apenas 15 Minutos, com Mais de 100 Receitas e 5 Bônus Essenciais pra Toda Mãe!
+          Transforme a Alimentação do Seu Bebê em 15 Minutos com 100+ Receitas e 5 Bônus Essenciais!
         </h1>
         <p className="text-md sm:text-lg md:text-xl text-muted-foreground max-w-3xl mb-8">
           Descubra como milhares de mamães estão conseguindo que seus bebês comam de forma saudável, gostosa e sem estresse. Assista ao vídeo agora e faça parte dessa mudança!
@@ -53,7 +53,7 @@ export function HeroSection() {
                 alt=""
                 aria-hidden="true"
                 // @ts-ignore
-                onload="this.parentNode.style.opacity=1;"
+                onLoad="this.parentNode.style.opacity=1;"
               />
             </div>
           </div>
