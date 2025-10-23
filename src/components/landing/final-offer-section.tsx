@@ -3,6 +3,7 @@
 import { CheckCircle2, Gift } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { event } from '@/lib/fpixel';
+import { trackServerEvent } from '@/lib/track-event';
 
 const bonuses = [
   {
@@ -25,6 +26,7 @@ const bonuses = [
 export function FinalOfferSection() {
   const handleCTAClick = () => {
     event('InitiateCheckout');
+    trackServerEvent('InitiateCheckout');
   };
 
   return (

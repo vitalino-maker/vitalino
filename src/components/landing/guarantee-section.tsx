@@ -4,10 +4,12 @@ import { Button } from '@/components/ui/button';
 import { ShieldCheck, Lock } from 'lucide-react';
 import Image from 'next/image';
 import { event } from '@/lib/fpixel';
+import { trackServerEvent } from '@/lib/track-event';
 
 export function GuaranteeSection() {
   const handleCTAClick = () => {
     event('InitiateCheckout');
+    trackServerEvent('InitiateCheckout');
   };
 
   return (

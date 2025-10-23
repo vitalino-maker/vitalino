@@ -3,10 +3,12 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { event } from '@/lib/fpixel';
+import { trackServerEvent } from '@/lib/track-event';
 
 export function HeroSection() {
   const handleCTAClick = () => {
     event('InitiateCheckout');
+    trackServerEvent('InitiateCheckout');
   };
 
   return (

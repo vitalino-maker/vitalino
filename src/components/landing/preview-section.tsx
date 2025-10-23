@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/carousel"
 import { Button } from "../ui/button";
 import { event } from '@/lib/fpixel';
+import { trackServerEvent } from '@/lib/track-event';
 
 const previewImages = [
   {
@@ -51,6 +52,7 @@ export function PreviewSection() {
 
     const handleCTAClick = () => {
       event('InitiateCheckout');
+      trackServerEvent('InitiateCheckout');
     };
 
   return (

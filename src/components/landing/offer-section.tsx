@@ -4,10 +4,12 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { BonusSection } from '@/components/landing/bonus-section';
 import { event } from '@/lib/fpixel';
+import { trackServerEvent } from '@/lib/track-event';
 
 export function OfferSection() {
   const handleCTAClick = () => {
     event('InitiateCheckout');
+    trackServerEvent('InitiateCheckout');
   };
 
   return (

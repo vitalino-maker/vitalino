@@ -5,6 +5,7 @@ import { UtensilsCrossed, Baby, CalendarDays, Smile, CircleDollarSign, Clipboard
 import type { LucideIcon } from "lucide-react";
 import { Button } from "../ui/button";
 import { event } from '@/lib/fpixel';
+import { trackServerEvent } from '@/lib/track-event';
 
 const features = [
   {
@@ -64,6 +65,7 @@ function FeatureCard({ icon: Icon, title, description }: FeatureCardProps) {
 export function DetailedBenefitsSection() {
   const handleCTAClick = () => {
     event('InitiateCheckout');
+    trackServerEvent('InitiateCheckout');
   };
 
   return (
