@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Script from 'next/script';
 import { Button } from '@/components/ui/button';
 import { event } from '@/lib/fpixel';
 import { trackServerEvent } from '@/lib/track-event';
@@ -22,40 +23,22 @@ export function HeroSection() {
         </p>
         
         <div className="w-full max-w-xs sm:max-w-xs md:max-w-xs mx-auto">
-           <div
-            className="relative w-full rounded-2xl bg-muted shadow-2xl overflow-hidden border-4 border-secondary ring-4 ring-secondary/50 mb-8 aspect-[9/16] wistia_embed wistia_async_zdsjemwzoi videoFoam=true"
-            style={{
-              padding: "177.78% 0 0 0",
-              position: "relative",
-            }}
+          <div
+            className="relative w-full rounded-2xl bg-muted shadow-2xl overflow-hidden border-4 border-secondary ring-4 ring-secondary/50 mb-8"
           >
-            <div
-              className="wistia_swatch"
-              style={{
-                height: "100%",
-                left: 0,
-                opacity: 0,
-                overflow: "hidden",
-                position: "absolute",
-                top: 0,
-                transition: "opacity 200ms",
-                width: "100%",
-              }}
-            >
-              <img
-                src="https://fast.wistia.com/embed/medias/zdsjemwzoi/swatch"
-                style={{
-                  filter: "blur(5px)",
-                  height: "100%",
-                  objectFit: "contain",
-                  width: "100%",
-                }}
-                alt=""
-                aria-hidden="true"
-                // @ts-ignore
-                onLoad="this.parentNode.style.opacity=1;"
-              />
-            </div>
+            {/* Wistia Player Embed - Optimized */}
+            <Script src="https://fast.wistia.com/player.js" strategy="afterInteractive" />
+            <Script src="https://fast.wistia.com/embed/zdsjemwzoi.js" strategy="afterInteractive" type="module" />
+            <style>{`
+              wistia-player[media-id='zdsjemwzoi']:not(:defined) { 
+                background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/zdsjemwzoi/swatch'); 
+                display: block; 
+                filter: blur(5px); 
+                padding-top: 177.78%; 
+              }
+            `}</style>
+            {/* @ts-ignore */}
+            <wistia-player media-id="zdsjemwzoi" aspect="0.5625"></wistia-player>
           </div>
         </div>
 
