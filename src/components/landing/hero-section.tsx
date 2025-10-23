@@ -18,7 +18,7 @@ export function HeroSection() {
           Transforme a Alimentação do Seu Bebê em 15 Minutos com 100+ Receitas e 5 Bônus Essenciais!
         </h1>
         <p className="text-md sm:text-lg md:text-xl text-muted-foreground max-w-3xl mb-8">
-          Descubra como milhares de mamães estão conseguindo que seus bebês comam de forma saudável, gostosa e sem estresse. Assista ao vídeo agora e faça parte dessa mudança!
+          Transforme a Alimentação do Seu Bebê em 15 Minutos com 100+ Receitinhas e 5 Bônus Essenciais pra toda Mãe! Faça seu bebê comer de forma saudável, gostosa e até pedir mais! Adquira o eBook completo com 100+ receitas e 5 bônus exclusivos, e descubra como tornar a introdução alimentar simples e prazerosa.
         </p>
         
         <div className="w-full max-w-xs sm:max-w-xs md:max-w-xs mx-auto">
